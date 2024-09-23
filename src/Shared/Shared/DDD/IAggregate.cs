@@ -1,7 +1,4 @@
-﻿
-using System.Security.Principal;
-
-namespace Shared.DDD;
+﻿namespace Shared.DDD;
 
 public interface IAggregate<T> : IAggregate, IEntity<T>
 {
