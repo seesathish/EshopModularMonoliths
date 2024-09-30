@@ -1,3 +1,5 @@
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog((context, config) =>
@@ -14,6 +16,14 @@ builder.Services
 
 builder.Services
     .AddMediatRWithAssemblies(catalogAssembly, basketAssembly);
+
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+});
+
+builder.Services
+    .AddMassTransitWithAssemblies(builder.Configuration, catalogAssembly, basketAssembly);
 
 //module services: catalog, basket, ordering
 builder.Services

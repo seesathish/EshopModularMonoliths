@@ -1,5 +1,5 @@
 ﻿
-namespace Catalog.Products.Dtos;
+namespace Catalog.Contracts.Products.Dtos;
 public record ProductDto(
     Guid Id,
     string Name,

@@ -20,10 +20,10 @@
 		<PackageReference Include="Serilog.Sinks.Seq" Version="8.0.0" />
 	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Modules\Basket\Basket\Basket.csproj" />
-    <ProjectReference Include="..\..\Modules\Catalog\Catalog\Catalog.csproj" />
-    <ProjectReference Include="..\..\Modules\Ordering\Ordering\Ordering.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Modules\Basket\Basket\Basket.csproj" />
+		<ProjectReference Include="..\..\Modules\Catalog\Catalog\Catalog.csproj" />
+		<ProjectReference Include="..\..\Modules\Ordering\Ordering\Ordering.csproj" />
+	</ItemGroup>
 
 </Project>
